@@ -1,0 +1,84 @@
+import { Phone, Mail } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+
+export function Footer() {
+  return (
+    <footer className="bg-slate-800 text-white py-12">
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-8">
+          {/* Contact Information */}
+          <div className="text-center md:text-left space-y-2">
+            <div className="flex items-center justify-center md:justify-start gap-2">
+              <Phone className="w-5 h-5" />
+              <span className="text-xl font-semibold hover:text-green-500 transition-colors">
+                07725 966 021
+              </span>
+            </div>
+            <div className="flex items-center justify-center md:justify-start gap-2">
+              <Mail className="w-5 h-5" />
+              <span className="hover:text-green-500 transition-colors">
+                fencingservices
+              </span>
+            </div>
+            <div className="text-center md:text-left">
+              <span className="hover:text-green-500 transition-colors">
+                westmidlands@gmail.com
+              </span>
+            </div>
+          </div>
+
+          {/* Logo */}
+          <div className="flex justify-center">
+            <div className="flex items-center">
+              <Image src="/logo.png" alt="Logo" width={120} height={120} />
+            </div>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="flex justify-center md:justify-end gap-4">
+            {[
+              { src: "/facebook-icon.png", alt: "Facebook", label: "Facebook" },
+              { src: "/google-icon.png", alt: "Google", label: "Google" },
+              { src: "/yell-icon.png", alt: "Yell", label: "Yell" },
+            ].map((icon, i) => (
+              <Link
+                key={i}
+                href="#"
+                className="w-12 h-12 rounded-full flex items-center justify-center text-slate-800 transition-colors duration-300"
+                aria-label={icon.label}
+              >
+                <Image
+                  src={icon.src}
+                  alt={icon.alt}
+                  width={32}
+                  height={32}
+                  className="filter invert brightness-0 hover:filter-none transition duration-300"
+                />
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="border-t border-slate-700 pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
+            <div className="mb-2 md:mb-0">
+              © 2025 Fencing Services London |
+              <a
+                href="#"
+                className="hover:text-green-500 transition-colors duration-300 ml-1"
+              >
+                Privacy Policy
+              </a>
+            </div>
+            <div className="hover:text-green-500 transition-colors duration-300">
+              Website by New World Digital Media Ltd.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
