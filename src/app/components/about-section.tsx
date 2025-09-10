@@ -60,9 +60,7 @@ export function AboutSection() {
 
           {/* Right side - Content */}
           <div
-            className={`transform transition-all duration-1000 ease-out delay-300 ${
-              isVisible ? "translate-x-0 opacity-100" : "translate-x-12 opacity-0"
-            }`}
+            className={`transform transition-all duration-1000 ease-out delay-300`}
           >
             {/* Header */}
             <div className="mb-8">
