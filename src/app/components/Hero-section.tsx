@@ -57,9 +57,9 @@ export function HeroSection() {
             transition={{ delay: 0.9, duration: 0.9 }}
             className="text-base sm:text-lg md:text-xl lg:text-2xl montserrat-500 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed text-balance px-2 sm:px-0"
           >
-            From decorative fencing to custom patios and decking, we bring your
+            Strong, stylish, and secure fencing solutions designed 
             <br className="hidden md:block" />
-            outdoor space to life with over 7 years of experience.
+            to protect your property and enhance its beauty.
           </motion.p>
 
           {/* CTA Buttons - Improved responsive button layout */}
