@@ -1,79 +1,60 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { CheckCircle } from "lucide-react"
+import Image from "next/image"
 
-export function ServicesSection() {
-  const services = [
-    {
-      title: "FENCING & GATES",
-      image: "/wooden-fence-installation.png",
-      link: "#",
-    },
-    {
-      title: "DECKING & PATIOS",
-      image: "/stone-patio-decking.jpg",
-      link: "#",
-    },
-    {
-      title: "GARDEN LANDSCAPING",
-      image: "/green-lawn-garden-landscaping.jpg",
-      link: "#",
-    },
-    {
-      title: "ROOFING",
-      image: "/flat-roof-installation.png",
-      link: "#",
-    },
-  ]
-
+export function FencingSection() {
   return (
-    <section className="py-16 px-4 bg-white  mt-10">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-gray-500 text-sm font-medium tracking-wider uppercase mb-2">OUR SERVICES</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">WHAT WE DO</h2>
-          {/* Green underline */}
-          <div className="w-16 h-1 bg-green-500 mx-auto mb-8"></div>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            We offer a wide range of outdoor solutions - including fencing, patios, gates, decking, and complete garden
-            makeovers.
+    <section className="py-20 px-4 bg-gray-50 mt-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Side - Image */}
+        <div className="relative rounded-2xl overflow-hidden shadow-lg group">
+          <Image
+            src="/gallery-1.jpg"
+            height={450}
+            width={600}
+            alt="Fencing and Gates"
+            className="w-full h-[450px] object-cover transform transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500"></div>
+          <h2 className="absolute bottom-6 left-6 text-white text-3xl font-bold">
+            Fencing Services
+          </h2>
+        </div>
+
+        {/* Right Side - Content */}
+        <div>
+          <p className="text-green-600 text-sm font-semibold uppercase tracking-wider mb-2">
+            Our Expertise
           </p>
-        </div>
+          <h3 className="text-4xl font-bold text-gray-900 mb-6 leading-snug">
+            Enhance Security & Style with <span className="text-green-600">Premium Fencing Solutions</span>
+          </h3>
+          <p className="text-gray-600 text-lg leading-relaxed mb-6">
+            We provide durable, stylish, and secure fencing & gate installations tailored to your outdoor space. 
+            Whether you need privacy fencing, decorative designs, or strong security gates – 
+            our experts deliver solutions that stand the test of time.
+          </p>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {services.map((service, index) => (
-            <div key={index} className="relative group overflow-hidden rounded-lg aspect-[4/5] cursor-pointer">
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-                style={{
-                  backgroundImage: `url(${service.image})`,
-                }}
-              />
+          {/* Features List */}
+          <ul className="space-y-3 mb-8">
+            <li className="flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-green-500" />
+              <span className="text-gray-700">High-quality wood & metal options</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-green-500" />
+              <span className="text-gray-700">Custom design & installation</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-green-500" />
+              <span className="text-gray-700">Long-lasting durability & weather resistance</span>
+            </li>
+          </ul>
 
-              {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-40 transition-opacity duration-300" />
-
-              {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-bold mb-3 leading-tight">{service.title}</h3>
-                <a
-                  href={service.link}
-                  className="text-white text-sm font-medium flex items-center gap-2 hover:gap-3 transition-all duration-300"
-                >
-                  Learn more
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA Button */}
-        <div className="text-center">
-          <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg font-semibold rounded-md transition-colors duration-300">
-            GET A QUOTE
+          {/* CTA Button */}
+          <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition-colors duration-300">
+            Get a Free Quote
           </Button>
         </div>
       </div>

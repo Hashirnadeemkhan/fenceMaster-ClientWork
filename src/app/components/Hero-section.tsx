@@ -37,9 +37,9 @@ export function HeroSection() {
             transition={{ delay: 0.3, duration: 0.9 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl montserrat-700 mb-4 sm:mb-6 leading-tight text-balance mt-20 sm:mt-16 md:mt-12 lg:mt-0"
           >
-            QUALITY FENCING & LANDSCAPING SERVICES
+            Quality fencing service 
             <br className="hidden sm:block" />
-            <span className="block sm:inline montserrat-500 mt-2 sm:mt-0">ACROSS THE LONDON</span>
+            <span className="block sm:inline montserrat-500 mt-2 sm:mt-0">across London</span>
           </motion.h1>
 
           {/* Green Underline - Responsive width */}

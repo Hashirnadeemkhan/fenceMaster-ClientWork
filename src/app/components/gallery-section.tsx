@@ -5,14 +5,14 @@ import Image from "next/image"
 
 export function GallerySection() {
   const galleryImages = [
+   
     "/gallery-1.jpg",
     "/gallery-2.jpg",
     "/gallery-3.jpg",
     "/gallery-4.jpg",
     "/gallery-5.jpg",
-    "/gallery-6.jpg",
-    "/gallery-7.jpg",
-    "/gallery-8.jpg",
+ 
+  
   ]
 
   return (
@@ -28,7 +28,7 @@ export function GallerySection() {
         <div className="w-16 h-1 bg-green-500 mx-auto mb-6"></div>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
           Have a look at some of our recently completed jobs from around Birmingham 
-          and the surrounding areas in West Midlands.
+          and the surrounding areas in London.
         </p>
       </div>
 

@@ -13,7 +13,7 @@ export function Footer() {
             <div className="flex items-center justify-center md:justify-start gap-2">
               <Phone className="w-5 h-5" />
               <span className="text-xl font-semibold hover:text-green-500 transition-colors">
-                07725 966 021
+                +44 7869 457259
               </span>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-2">
@@ -24,7 +24,7 @@ export function Footer() {
             </div>
             <div className="text-center md:text-left">
               <span className="hover:text-green-500 transition-colors">
-                westmidlands@gmail.com
+                azeemshaikh26@gmail.com
               </span>
             </div>
           </div>
