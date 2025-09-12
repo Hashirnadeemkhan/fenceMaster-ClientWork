@@ -1,7 +1,6 @@
 import React from 'react'
 import { HeroSection } from './components/Hero-section'
 import { ContactBanner } from './components/contact-banner'
-import { WhatsAppFloat } from './components/whatsapp-float'
 import { FencingSection } from './components/services-section'
 import { GallerySection } from './components/gallery-section'
 import { CTASection } from './components/cta-section'
@@ -11,11 +10,14 @@ import { AboutSection } from './components/about-section'
 const Home = () => {
   return (
     <div>
-  
-      <HeroSection/>
+        <HeroSection
+        title="Quality fencing service"
+        subtitle="across London"
+        description="Strong, stylish, and secure fencing solutions designed to protect your property and enhance its beauty."
+        primaryButtonText="GET A QUOTE"
+        secondaryButtonText="LEARN MORE"
+      />
       <ContactBanner/>
-      <WhatsAppFloat/>
-      {/* <ServicesSection/> */}
       <FencingSection/>
       <AboutSection/>
       <GallerySection/>

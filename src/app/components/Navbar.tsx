@@ -85,6 +85,9 @@ export function Navbar() {
             <Link href="/" className="hover:text-green-500 transition-colors duration-200 py-2">
               Home
             </Link>
+            <Link href="/service" className="hover:text-green-500 transition-colors duration-200 py-2">
+              Service
+            </Link>
             <Link href="/about" className="hover:text-green-500 transition-colors duration-200 py-2">
               About Us
             </Link>
@@ -181,6 +184,13 @@ export function Navbar() {
                 className="hover:text-green-500 transition-colors duration-200 py-2 border-b border-gray-200/20"
               >
                 Home
+              </Link>
+              <Link
+                href="/service"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-green-500 transition-colors duration-200 py-2 border-b border-gray-200/20"
+              >
+                Service
               </Link>
               <Link
                 href="/about"

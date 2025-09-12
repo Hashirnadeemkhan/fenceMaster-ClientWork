@@ -6,6 +6,7 @@ import "./globals.css"
 // Components import
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/footer"
+import { WhatsAppFloat } from "./components/whatsapp-float"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -107,6 +108,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <Navbar />
+        <WhatsAppFloat />
         <main>{children}</main>
         <Footer />
       </body>
