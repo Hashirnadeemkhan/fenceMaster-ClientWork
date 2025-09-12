@@ -1,8 +1,8 @@
 import React from 'react'
 import { HeroSection } from './components/Hero-section'
-import { ContactBanner } from './components/contact-banner'
+// import { ContactBanner } from './components/contact-banner'
 import { FencingSection } from './components/services-section'
-import { GallerySection } from './components/gallery-section'
+// import { GallerySection } from './components/gallery-section'
 import { CTASection } from './components/cta-section'
 import { ReviewsSection } from './components/reviews-section'
 import { AboutSection } from './components/about-section'
@@ -17,10 +17,10 @@ const Home = () => {
         primaryButtonText="GET A QUOTE"
         secondaryButtonText="LEARN MORE"
       />
-      <ContactBanner/>
+      {/* <ContactBanner/> */}
       <FencingSection/>
       <AboutSection/>
-      <GallerySection/>
+      {/* <GallerySection/> */}
       <ReviewsSection/>
       <CTASection/>
     </div>
