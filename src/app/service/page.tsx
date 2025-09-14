@@ -44,7 +44,7 @@ export default function ServicesPage() {
       <HeroSection
         title="Professional Fencing"
         subtitle="Services"
-        description="From residential garden fencing to commercial security solutions, we provide comprehensive fencing services across London."
+        description="From Residential garden fencing to Commercial security solutions, we provide comprehensive fencing services across London."
         primaryButtonText="VIEW SERVICES"
         secondaryButtonText="GET QUOTE"
       />

@@ -108,8 +108,11 @@ export function Navbar() {
                     ? "text-gray-600 hover:text-green-500 hover:bg-green-50"
                     : "text-white hover:text-green-400 hover:bg-white/10"
                 }`}
+                asChild
               >
-                <Phone className="h-4 w-4 xl:h-5 xl:w-5" />
+                <Link href="tel:+447869457259" aria-label="Call +44 7869 457259">
+                  <Phone className="h-4 w-4 xl:h-5 xl:w-5" />
+                </Link>
               </Button>
               <Button
                 size="icon"
@@ -119,8 +122,10 @@ export function Navbar() {
                     ? "text-gray-600 hover:text-green-500 hover:bg-green-50"
                     : "text-white hover:text-green-400 hover:bg-white/10"
                 }`}
-              >
+              > <Link href="tel:+447869457259" aria-label="Call +44 7869 457259">
+
                 <MessageCircle className="h-4 w-4 xl:h-5 xl:w-5" />
+              </Link>
               </Button>
               <Button
                 size="icon"
@@ -130,8 +135,11 @@ export function Navbar() {
                     ? "text-gray-600 hover:text-green-500 hover:bg-green-50"
                     : "text-white hover:text-green-400 hover:bg-white/10"
                 }`}
+                asChild
               >
-                <Mail className="h-4 w-4 xl:h-5 xl:w-5" />
+                <Link href="mailto:azeemshaikh26@gmail.com" aria-label="Email azeemshaikh26@gmail.com">
+                  <Mail className="h-4 w-4 xl:h-5 xl:w-5" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -225,8 +233,11 @@ export function Navbar() {
                     ? "text-gray-600 hover:text-green-500 hover:bg-green-50"
                     : "text-white hover:text-green-400 hover:bg-white/10"
                 }`}
+                asChild
               >
-                <Phone className="h-6 w-6" />
+                <Link href="tel:+447869457259" aria-label="Call +44 7869 457259">
+                  <Phone className="h-6 w-6" />
+                </Link>
               </Button>
               <Button
                 size="icon"
@@ -247,8 +258,11 @@ export function Navbar() {
                     ? "text-gray-600 hover:text-green-500 hover:bg-green-50"
                     : "text-white hover:text-green-400 hover:bg-white/10"
                 }`}
+                asChild
               >
-                <Mail className="h-6 w-6" />
+                <Link href="mailto:azeemshaikh26@gmail.com" aria-label="Email azeemshaikh26@gmail.com">
+                  <Mail className="h-6 w-6" />
+                </Link>
               </Button>
             </div>
           </div>

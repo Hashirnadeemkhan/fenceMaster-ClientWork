@@ -77,9 +77,9 @@ export default function AboutPage() {
                 }`}
               >
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  Founded in 2010, Fence Masters began as a small family business with a simple mission: to provide
-                  London homeowners and businesses with the highest quality fencing solutions. What started in a small
-                  workshop has grown into one of London&#39;s most trusted fencing companies.
+                  Fence Masters has been proudly serving London for over 7 years, providing reliable and high-quality fencing solutions for homes and businesses. We believe every fence is more than just a boundary — it’s a promise of security, style, and strength.
+
+Our passion for craftsmanship and commitment to customer satisfaction have helped us build long-lasting relationships with our clients. From the first consultation to the final installation, we ensure every project reflects our dedication, care, and trust.
                 </p>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   Our commitment to excellence, attention to detail, and customer satisfaction has earned us a
@@ -107,7 +107,7 @@ export default function AboutPage() {
               <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-green-600 rounded-2xl blur opacity-20 animate-pulse"></div>
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500">
                 <Image
-                  src="/hero-img.jpg"
+                  src="/gallery-5.jpg"
                   height={400}
                   width={600}
                   alt="Our professional team"
