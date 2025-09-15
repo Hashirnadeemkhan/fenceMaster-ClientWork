@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 interface HeroSectionProps {
   title: string
@@ -87,15 +88,19 @@ export function HeroSection({
             transition={{ delay: 1.2, duration: 0.9 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0"
           >
-            <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300">
-              {primaryButtonText}
-            </Button>
-            <Button
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md bg-transparent w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300"
-            >
-              {secondaryButtonText}
-            </Button>
+           <Link href="/contact">
+             <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300">
+               {primaryButtonText}
+             </Button>
+           </Link>
+            <Link href="/about">
+              <Button
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md bg-transparent w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300"
+              >
+                {secondaryButtonText}
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

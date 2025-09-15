@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export function GallerySection() {
   const galleryImages = [
@@ -51,9 +52,11 @@ export function GallerySection() {
 
       {/* Button */}
       <div className="text-center">
-        <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg font-semibold rounded-lg">
-          VIEW GALLERY
-        </Button>
+       <Link href="/gallery">
+         <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg font-semibold rounded-lg">
+           VIEW GALLERY
+         </Button>
+       </Link>
       </div>
 
       {/* Animation */}

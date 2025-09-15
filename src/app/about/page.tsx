@@ -4,8 +4,9 @@ import { HeroSection } from "../components/Hero-section"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, Users, Award, Clock } from "lucide-react"
+import { CheckCircle, Users, Award, Clock} from "lucide-react"
 import { useEffect, useRef, useState } from "react"
+import Link from "next/link"
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState({
@@ -93,9 +94,11 @@ Our passion for craftsmanship and commitment to customer satisfaction have helpe
                   isVisible.story ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
               >
-                <Button className="bg-green-600 hover:bg-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-3 text-lg">
-                  Learn More About Us
-                </Button>
+                <Link href="/about">
+                  <Button className="bg-green-600 hover:bg-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-3 text-lg">
+                    Learn More About Us
+                  </Button>
+                </Link>
               </div>
             </div>
 

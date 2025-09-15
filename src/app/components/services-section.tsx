@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
 
@@ -52,10 +52,7 @@ export function FencingSection() {
             </li>
           </ul>
 
-          {/* CTA Button */}
-          <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition-colors duration-300">
-            Get a Free Quote
-          </Button>
+      
         </div>
       </div>
     </section>

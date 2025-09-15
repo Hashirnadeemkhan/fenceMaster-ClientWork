@@ -12,20 +12,33 @@ interface Review {
 const reviews: Review[] = [
   {
     id: 1,
-    name: "Samantha",
+    name: "Aisha",
     rating: 5,
-    text: "What an amazing service. Quick thorough and really efficient. So happy with all the work. Would recommend this service to anyone who wants a good job from start to finish. Thank you so much feel so happy with the job 😊",
+    text: "Fantastic job — the team were punctual, tidy and the new fence looks great. Very pleased with the whole process.",
   },
   {
     id: 2,
-    name: "Simon",
+    name: "Bilal",
     rating: 5,
-    text: "Chris. A man of his word, very quick repair on a fence which one of my drivers hit, insurance job, very professional, excellent 10/10",
+    text: "Quick turnaround and excellent workmanship. They fixed an urgent repair for me and did it professionally.",
+  },
+  {
+    id: 3,
+    name: "Kiran",
+    rating: 4,
+    text: "Overall a very good service. Communication was clear and the quality is strong. Small scheduling hiccup but nothing major.",
+  },
+  {
+    id: 4,
+    name: "Omar",
+    rating: 5,
+    text: "Highly recommended — great value and a durable finish. The installers were polite and left the site clean.",
   },
 ]
 
 export function ReviewsSection() {
   const [isVisible, setIsVisible] = useState(false)
+  const [showAll, setShowAll] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -45,14 +58,13 @@ export function ReviewsSection() {
     return () => observer.disconnect()
   }, [])
 
-  const StarRating = ({  delay = 0 }: { rating: number; delay?: number }) => {
+  const StarRating = ({ rating, delay = 0 }: { rating: number; delay?: number }) => {
     return (
-      <div className="flex justify-center mb-4 ">
+      <div className="flex justify-center mb-4">
         {[...Array(5)].map((_, index) => (
           <svg
             key={index}
-            className={`w-6 h-6 text-yellow-400 transition-all duration-300 
-            }`}
+            className={`w-6 h-6 ${index < rating ? "text-yellow-400" : "text-gray-300"} transition-all duration-300`}
             style={{
               animationDelay: `${delay + index * 100}ms`,
               animationDuration: "600ms",
@@ -67,6 +79,8 @@ export function ReviewsSection() {
       </div>
     )
   }
+
+  const visibleReviews = showAll ? reviews : reviews.slice(0, 2)
 
   return (
     <section ref={sectionRef} className="py-16 bg-gray-50">
@@ -110,8 +124,8 @@ export function ReviewsSection() {
         </div>
 
         {/* Reviews Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12 ">
-          {reviews.map((review, index) => (
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+          {visibleReviews.map((review, index) => (
             <div
               key={review.id}
               className={`bg-gray-200 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 transform ${
@@ -147,12 +161,13 @@ export function ReviewsSection() {
         {/* CTA Button */}
         <div className="text-center">
           <button
+            onClick={() => setShowAll(!showAll)}
             className={`bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
             style={{ transitionDelay: "2000ms" }}
           >
-            READ ALL REVIEWS
+            {showAll ? "SHOW LESS" : "READ ALL REVIEWS"}
           </button>
         </div>
       </div>
