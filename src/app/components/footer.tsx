@@ -38,26 +38,52 @@ export function Footer() {
 
           {/* Social Media Icons */}
           <div className="flex justify-center md:justify-end gap-4">
-            {[
-              { src: "/facebook-icon.png", alt: "Facebook", label: "Facebook" },
-              { src: "/google-icon.png", alt: "Google", label: "Google" },
-              { src: "/yell-icon.png", alt: "Yell", label: "Yell" },
-            ].map((icon, i) => (
-              <Link
-                key={i}
-                href="#"
-                className="w-12 h-12 rounded-full flex items-center justify-center text-slate-800 transition-colors duration-300"
-                aria-label={icon.label}
-              >
-                <Image
-                  src={icon.src}
-                  alt={icon.alt}
-                  width={32}
-                  height={32}
-                  className="filter invert brightness-0 hover:filter-none transition duration-300"
-                />
-              </Link>
-            ))}
+            {/* Facebook */}
+            <Link
+              href="#"
+              className="w-12 h-12 rounded-full flex items-center justify-center text-slate-800 transition-colors duration-300"
+              aria-label="Facebook"
+            >
+              <Image
+                src="/facebook-icon.png"
+                alt="Facebook"
+                width={32}
+                height={32}
+                className="filter invert brightness-0 hover:filter-none transition duration-300"
+              />
+            </Link>
+
+            {/* Google */}
+            <Link
+              href="https://share.google/41IzzWAH7JET05EY4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full flex items-center justify-center text-slate-800 transition-colors duration-300"
+              aria-label="Google"
+            >
+              <Image
+                src="/google-icon.png"
+                alt="Google"
+                width={32}
+                height={32}
+                className="filter invert brightness-0 hover:filter-none transition duration-300"
+              />
+            </Link>
+
+            {/* Yell */}
+            <Link
+              href="#"
+              className="w-12 h-12 rounded-full flex items-center justify-center text-slate-800 transition-colors duration-300"
+              aria-label="Yell"
+            >
+              <Image
+                src="/yell-icon.png"
+                alt="Yell"
+                width={32}
+                height={32}
+                className="filter invert brightness-0 hover:filter-none transition duration-300"
+              />
+            </Link>
           </div>
         </div>
 

@@ -26,7 +26,10 @@ export function CTASection() {
   }, [])
 
   return (
-    <section id="cta-section" className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+    <section
+      id="cta-section"
+      className="relative min-h-[500px] flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform transition-transform duration-[8000ms] hover:scale-105"
@@ -83,22 +86,32 @@ export function CTASection() {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
-          <Button
-            size="lg"
-            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 text-lg font-semibold rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 group"
+          {/* WhatsApp Button */}
+          <a
+            href="https://wa.me/447869457259"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <MessageSquare className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:scale-110" />
-            GET A QUOTE
-          </Button>
+            <Button
+              size="lg"
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 text-lg font-semibold rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 group"
+            >
+              <MessageSquare className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:scale-110" />
+              GET A QUOTE
+            </Button>
+          </a>
 
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg group bg-transparent"
-          >
-            <Phone className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:scale-110" />
-            CALL US
-          </Button>
+          {/* Call Button */}
+          <a href="tel:+447869457259">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg group bg-transparent"
+            >
+              <Phone className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:scale-110" />
+              CALL US
+            </Button>
+          </a>
         </div>
       </div>
 

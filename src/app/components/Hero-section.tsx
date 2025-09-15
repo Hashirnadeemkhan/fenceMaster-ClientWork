@@ -18,12 +18,12 @@ export function HeroSection({
   subtitle,
   description,
   primaryButtonText = "GET A QUOTE",
-  secondaryButtonText = "LEARN MORE",
+  secondaryButtonText = "CALL US",
   backgroundImage = "/hero-img.jpg",
 }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-      {/* Background Image - Added priority and optimized loading */}
+      {/* Background Image */}
       <Image
         src={backgroundImage || "/placeholder.svg"}
         alt="hero"
@@ -32,14 +32,12 @@ export function HeroSection({
         priority
         quality={85}
         sizes="100vw"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
       />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Content - Improved responsive spacing and text sizing */}
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -47,7 +45,7 @@ export function HeroSection({
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-5xl mx-auto"
         >
-          {/* Main Heading - Better responsive typography and spacing */}
+          {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -63,7 +61,7 @@ export function HeroSection({
             )}
           </motion.h1>
 
-          {/* Green Underline - Responsive width */}
+          {/* Green Underline */}
           <motion.div
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
@@ -71,7 +69,7 @@ export function HeroSection({
             className="w-16 sm:w-20 md:w-24 lg:w-32 h-1 bg-green-500 mx-auto mb-4 sm:mb-6 origin-left"
           />
 
-          {/* Description - Better responsive text and spacing */}
+          {/* Description */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -81,23 +79,30 @@ export function HeroSection({
             {description}
           </motion.p>
 
-          {/* CTA Buttons - Improved responsive button layout */}
+          {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.9 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0"
           >
-           <Link href="/contact">
-             <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300">
-               {primaryButtonText}
-             </Button>
-           </Link>
-            <Link href="/about">
-              <Button
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md bg-transparent w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300"
-              >
+            {/* WhatsApp Button */}
+            <Link
+              href="https://wa.me/447869457259" // <-- apna WhatsApp number yahan daalna (92 ke sath)
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300">
+                {primaryButtonText}
+              </Button>
+            </Link>
+
+            {/* Call Button */}
+            <Link href="tel:+447869457259">
+      <Button
+        variant="outline"
+        className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-md bg-transparent w-full sm:w-auto max-w-xs sm:max-w-none transition-all duration-300"
+      >
                 {secondaryButtonText}
               </Button>
             </Link>
