@@ -3,6 +3,7 @@
 import { HeroSection } from "../components/Hero-section"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { Home, Building, CheckCircle, ArrowRight, Shield, Clock, Award, Users } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
@@ -128,14 +129,17 @@ export default function ServicesPage() {
                       </div>
                       <div className="flex items-center gap-2 text-gray-600">
                         <Shield className="w-5 h-5" />
-                        <span className="font-medium">5-Year Warranty</span>
+                        <span className="font-medium ">5-Year Warranty</span>
                       </div>
                     </div>
 
-                    <Button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                      Get Residential Quote
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Button>
+                     <Link href="tel:+447869457259" aria-label="Call +44 7869 457259">
+  <Button className="mt-8 w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+    Get Residential Quote
+    <ArrowRight className="ml-2 w-5 h-5" />
+  </Button>
+</Link> 
+
                   </CardContent>
                 </Card>
               </div>
