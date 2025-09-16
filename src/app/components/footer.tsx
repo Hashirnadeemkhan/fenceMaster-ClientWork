@@ -24,7 +24,7 @@ export function Footer() {
             </div>
             <div className="text-center md:text-left">
               <span className="hover:text-green-500 transition-colors">
-                azeemshaikh26@gmail.com
+                Fencemasters804@gmail.com
               </span>
             </div>
           </div>

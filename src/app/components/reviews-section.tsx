@@ -12,25 +12,25 @@ interface Review {
 const reviews: Review[] = [
   {
     id: 1,
-    name: "Aisha",
+    name: "William",
     rating: 5,
     text: "Fantastic job — the team were punctual, tidy and the new fence looks great. Very pleased with the whole process.",
   },
   {
     id: 2,
-    name: "Bilal",
+    name: "Diana",
     rating: 5,
     text: "Quick turnaround and excellent workmanship. They fixed an urgent repair for me and did it professionally.",
   },
   {
     id: 3,
-    name: "Kiran",
+    name: "Sam",
     rating: 4,
     text: "Overall a very good service. Communication was clear and the quality is strong. Small scheduling hiccup but nothing major.",
   },
   {
     id: 4,
-    name: "Omar",
+    name: "Olivia",
     rating: 5,
     text: "Highly recommended — great value and a durable finish. The installers were polite and left the site clean.",
   },

@@ -82,7 +82,7 @@ export default function ContactPage() {
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-gray-900 mb-8 ">GET IN TOUCH</h2>
                 <div className="text-3xl font-bold text-gray-900 mb-4">+44 7869 457259</div>
-                <div className="text-lg text-gray-700 break-words">azeemshaikh26@gmail.com</div>
+                <div className="text-lg text-gray-700 break-words">Fencemasters804@gmail.com</div>
               </div>
 
               <div className="text-center">
