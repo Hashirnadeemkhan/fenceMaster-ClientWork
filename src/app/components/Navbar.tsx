@@ -1,7 +1,9 @@
 "use client"
 import { useState, useEffect } from "react"
+import type React from "react"
+
 import { Phone, Mail, Menu, X } from "lucide-react"
-import { FaWhatsapp } from "react-icons/fa"   // ✅ WhatsApp icon import
+import { FaWhatsapp } from "react-icons/fa"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
@@ -28,6 +30,12 @@ export function Navbar() {
       document.body.style.overflow = "unset"
     }
   }, [isOpen])
+
+  const handleCloseMenu = (e: React.MouseEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsOpen(false)
+  }
 
   return (
     <>
@@ -68,19 +76,19 @@ export function Navbar() {
                 scrolled ? "text-gray-800" : "text-white"
               }`}
             >
-              <Link href="/" className="hover:text-green-500 transition-colors duration-200 py-2">
+              <Link href="/" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
                 Home
               </Link>
-              <Link href="/service" className="hover:text-green-500 transition-colors duration-200 py-2">
+              <Link href="/service" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
                 Service
               </Link>
-              <Link href="/about" className="hover:text-green-500 transition-colors duration-200 py-2">
+              <Link href="/about" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
                 About Us
               </Link>
-              <Link href="/gallery" className="hover:text-green-500 transition-colors duration-200 py-2">
+              <Link href="/gallery" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
                 Gallery
               </Link>
-              <Link href="/contact" className="hover:text-green-500 transition-colors duration-200 py-2">
+              <Link href="/contact" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
                 Contact
               </Link>
 
@@ -101,7 +109,6 @@ export function Navbar() {
                   </Link>
                 </Button>
 
-                {/* ✅ WhatsApp Icon */}
                 <Button
                   size="icon"
                   variant="ghost"
@@ -112,11 +119,7 @@ export function Navbar() {
                   }`}
                   asChild
                 >
-                  <Link
-                    href="https://wa.me/447869457259"
-                    target="_blank"
-                    aria-label="Chat on WhatsApp"
-                  >
+                  <Link href="https://wa.me/447869457259" target="_blank" aria-label="Chat on WhatsApp">
                     <FaWhatsapp className="h-5 w-5" />
                   </Link>
                 </Button>
@@ -139,22 +142,24 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              className={`lg:hidden p-2 rounded-md transition-all duration-200 hover:scale-110 ${
-                scrolled ? "text-gray-800 hover:bg-gray-100" : "text-white hover:bg-white/10"
-              }`}
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            {!isOpen && (
+              <button
+                className={`lg:hidden p-2 rounded-md transition-all duration-200 hover:scale-110 ${
+                  scrolled ? "text-gray-800 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                }`}
+                onClick={() => setIsOpen(true)}
+                aria-label="Open menu"
+              >
+                <Menu className="h-6 w-6" />
+              </button>
+            )}
           </div>
         </div>
       </nav>
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 lg:hidden transition-opacity duration-300 ease-out ${
+        className={`fixed inset-0 z-[60] lg:hidden transition-opacity duration-300 ease-out ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -162,20 +167,19 @@ export function Navbar() {
           className={`absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ease-out ${
             isOpen ? "opacity-100" : "opacity-0"
           }`}
-          onClick={() => setIsOpen(false)}
+          onClick={handleCloseMenu}
         />
 
         <div
-          className={`absolute right-0 top-0 h-full w-full sm:w-80 bg-slate-800 text-white shadow-2xl transform transition-all duration-500 ease-out ${
+          className={`absolute right-0 top-0 h-full w-full sm:w-80 bg-slate-800 text-white shadow-2xl transform transition-all duration-500 ease-out z-[70] ${
             isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
           }`}
         >
           <button
-            className={`absolute top-4 right-4 p-2 rounded-md transition-all duration-200 text-white hover:bg-white/10 hover:scale-110 transform ${
-              isOpen ? "translate-x-0 opacity-100 delay-300" : "translate-x-4 opacity-0"
-            }`}
-            onClick={() => setIsOpen(false)}
+            className="absolute top-4 right-4 p-3 rounded-md transition-all duration-200 text-white hover:bg-white/10 hover:scale-110 z-[80]"
+            onClick={handleCloseMenu}
             aria-label="Close menu"
+            type="button"
           >
             <X className="h-6 w-6" />
           </button>
@@ -192,8 +196,8 @@ export function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`hover:text-green-400 transition-all duration-300 py-3 border-b border-gray-600 text-white hover:translate-x-2 transform ${
+                  onClick={handleCloseMenu}
+                  className={`hover:text-green-400 transition-all duration-300 py-3 border-b border-gray-600 text-white hover:translate-x-2 transform no-underline ${
                     isOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"
                   }`}
                   style={{
@@ -206,7 +210,7 @@ export function Navbar() {
             </div>
 
             <div
-              className={`flex justify-center space-x-6 mt-8 pt-8 border-t border-gray-600 transition-all duration-500 transform ${
+              className={`flex justify-center space-x-6 mt-8 pt-8  border-gray-600 transition-all duration-500 transform ${
                 isOpen ? "translate-y-0 opacity-100 delay-500" : "translate-y-8 opacity-0"
               }`}
             >
@@ -221,18 +225,13 @@ export function Navbar() {
                 </Link>
               </Button>
 
-              {/* ✅ WhatsApp Icon (Mobile) */}
               <Button
                 size="icon"
                 variant="ghost"
                 className="rounded-full transition-all duration-200 hover:scale-110 text-white hover:text-green-400 hover:bg-white/10"
                 asChild
               >
-                <Link
-                  href="https://wa.me/447869457259"
-                  target="_blank"
-                  aria-label="Chat on WhatsApp"
-                >
+                <Link href="https://wa.me/447869457259" target="_blank" aria-label="Chat on WhatsApp">
                   <FaWhatsapp className="h-6 w-6" />
                 </Link>
               </Button>
