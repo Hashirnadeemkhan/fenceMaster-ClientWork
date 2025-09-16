@@ -242,7 +242,7 @@ export function Navbar() {
                 className="rounded-full transition-all duration-200 hover:scale-110 text-white hover:text-green-400 hover:bg-white/10"
                 asChild
               >
-                <Link href="mailto:azeemshaikh26@gmail.com" aria-label="Email azeemshaikh26@gmail.com">
+                <Link href="mailto:Fencemasters804@gmail.com" aria-label="Email Fencemasters804@gmail.com">
                   <Mail className="h-6 w-6" />
                 </Link>
               </Button>

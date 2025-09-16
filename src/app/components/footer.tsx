@@ -32,7 +32,7 @@ export function Footer() {
           {/* Logo */}
           <div className="flex justify-center">
             <div className="flex items-center">
-              <Image src="/logo.png" alt="Logo" width={120} height={120} />
+              <Image src="/logo.webp" alt="Logo" width={120} height={120} />
             </div>
           </div>
 
