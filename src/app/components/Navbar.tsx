@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
-import { Phone, MessageCircle, Mail, Menu, X } from "lucide-react"
+import { Phone, Mail, Menu, X } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"   // ✅ WhatsApp icon import
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
@@ -99,6 +100,8 @@ export function Navbar() {
                     <Phone className="h-4 w-4 xl:h-5 xl:w-5" />
                   </Link>
                 </Button>
+
+                {/* ✅ WhatsApp Icon */}
                 <Button
                   size="icon"
                   variant="ghost"
@@ -109,10 +112,15 @@ export function Navbar() {
                   }`}
                   asChild
                 >
-                  <Link href="tel:+447869457259" aria-label="Call +44 7869 457259">
-                    <MessageCircle className="h-4 w-4 xl:h-5 xl:w-5" />
+                  <Link
+                    href="https://wa.me/447869457259"
+                    target="_blank"
+                    aria-label="Chat on WhatsApp"
+                  >
+                    <FaWhatsapp className="h-5 w-5" />
                   </Link>
                 </Button>
+
                 <Button
                   size="icon"
                   variant="ghost"
@@ -212,16 +220,23 @@ export function Navbar() {
                   <Phone className="h-6 w-6" />
                 </Link>
               </Button>
+
+              {/* ✅ WhatsApp Icon (Mobile) */}
               <Button
                 size="icon"
                 variant="ghost"
                 className="rounded-full transition-all duration-200 hover:scale-110 text-white hover:text-green-400 hover:bg-white/10"
                 asChild
               >
-                <Link href="tel:+447869457259" aria-label="Call +44 7869 457259">
-                  <MessageCircle className="h-6 w-6" />
+                <Link
+                  href="https://wa.me/447869457259"
+                  target="_blank"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <FaWhatsapp className="h-6 w-6" />
                 </Link>
               </Button>
+
               <Button
                 size="icon"
                 variant="ghost"
