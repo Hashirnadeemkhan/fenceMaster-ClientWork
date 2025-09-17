@@ -31,7 +31,7 @@ export function Navbar() {
     }
   }, [isOpen])
 
-  const handleCloseMenu = (e: React.MouseEvent) => {
+  const handleCloseMenu = () => {
 
     setIsOpen(false)
   }
