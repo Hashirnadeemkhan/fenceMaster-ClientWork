@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -12,20 +12,24 @@ export function Footer() {
           <div className="text-center md:text-left space-y-2">
             <div className="flex items-center justify-center md:justify-start gap-2">
               <Phone className="w-5 h-5" />
-              <span className="text-xl font-semibold hover:text-green-500 transition-colors">
-                +44 7869 457259
-              </span>
+              <span className="text-xl font-semibold hover:text-green-500 transition-colors">+44 7869 457259</span>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-2">
               <Mail className="w-5 h-5" />
-              <span className="hover:text-green-500 transition-colors">
-                fencingservices
-              </span>
+              <span className="hover:text-green-500 transition-colors">fencingservices</span>
             </div>
             <div className="text-center md:text-left">
-              <span className="hover:text-green-500 transition-colors">
-                Fencemasters804@gmail.com
-              </span>
+              <span className="hover:text-green-500 transition-colors">Fencemasters804@gmail.com</span>
+            </div>
+            <div className="flex items-start justify-center md:justify-start gap-2 mt-3">
+              <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+              <div className="text-sm leading-relaxed">
+                <div className="font-medium">Yard A</div>
+                <div>GLADWIN STORAGE LTD</div>
+                <div>PINSTONE WAY</div>
+                <div>GERRARDS CROSS</div>
+                <div className="font-medium">SL9 7BJ</div>
+              </div>
             </div>
           </div>
 
@@ -92,10 +96,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
             <div className="mb-2 md:mb-0">
               © 2025 Fencing Services London |
-              <a
-                href="#"
-                className="hover:text-green-500 transition-colors duration-300 ml-1"
-              >
+              <a href="#" className="hover:text-green-500 transition-colors duration-300 ml-1">
                 Privacy Policy
               </a>
             </div>

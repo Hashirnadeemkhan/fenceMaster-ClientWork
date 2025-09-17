@@ -1,6 +1,8 @@
+
 import { HeroSection } from "../components/Hero-section"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
+import { BeforeAfterSection } from "../components/before-after-section"
 
 export default function GalleryPage() {
   return (
@@ -12,6 +14,8 @@ export default function GalleryPage() {
         primaryButtonText="VIEW PROJECTS"
         secondaryButtonText="REQUEST QUOTE"
       />
+
+      <BeforeAfterSection />
 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -46,8 +50,8 @@ export default function GalleryPage() {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video overflow-hidden">
                 <Image
-                height={300}
-                width={400}
+                  height={300}
+                  width={400}
                   src="/gallery-1.jpg"
                   alt="Commercial Security Fence"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -66,7 +70,7 @@ export default function GalleryPage() {
               <div className="aspect-video overflow-hidden">
                 <Image
                   height={300}
-                width={400}
+                  width={400}
                   src="/gallery-3.jpg"
                   alt="Privacy Fence Panels"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -85,7 +89,7 @@ export default function GalleryPage() {
               <div className="aspect-video overflow-hidden">
                 <Image
                   height={300}
-                width={400}
+                  width={400}
                   src="/gallery-4.jpg"
                   alt="Traditional Wooden Fence"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -104,7 +108,7 @@ export default function GalleryPage() {
               <div className="aspect-video overflow-hidden">
                 <Image
                   height={300}
-                width={400}
+                  width={400}
                   src="/gallery-5.jpg"
                   alt="Industrial Security Fence"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -123,7 +127,7 @@ export default function GalleryPage() {
               <div className="aspect-video overflow-hidden">
                 <Image
                   height={300}
-                width={400}
+                  width={400}
                   src="/gallery-6.jpg"
                   alt="Composite Fence Panels"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -161,8 +165,8 @@ export default function GalleryPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 italic">
-                  &quot;Exceptional service from start to finish. The team was professional, punctual, and the quality of
-                  work exceeded our expectations.&quot;
+                  &quot;Exceptional service from start to finish. The team was professional, punctual, and the quality
+                  of work exceeded our expectations.&quot;
                 </p>
                 <div className="font-semibold text-gray-900">Sarah Johnson</div>
                 <div className="text-sm text-gray-500">Hampstead Homeowner</div>
@@ -179,8 +183,8 @@ export default function GalleryPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 italic">
-                  &quot;Perfect installation of our commercial security fencing. Great communication throughout the project
-                  and completed on time.&quot;
+                  &quot;Perfect installation of our commercial security fencing. Great communication throughout the
+                  project and completed on time.&quot;
                 </p>
                 <div className="font-semibold text-gray-900">Michael Chen</div>
                 <div className="text-sm text-gray-500">Business Owner, Canary Wharf</div>
@@ -197,8 +201,8 @@ export default function GalleryPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 italic">
-                  &quot;Beautiful garden fence that perfectly matches our home&#39;s aesthetic. Highly recommend Fence Masters
-                  for quality and reliability.&quot;
+                  &quot;Beautiful garden fence that perfectly matches our home&#39;s aesthetic. Highly recommend Fence
+                  Masters for quality and reliability.&quot;
                 </p>
                 <div className="font-semibold text-gray-900">Emma Thompson</div>
                 <div className="text-sm text-gray-500">Richmond Resident</div>
