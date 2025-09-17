@@ -32,8 +32,7 @@ export function Navbar() {
   }, [isOpen])
 
   const handleCloseMenu = (e: React.MouseEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
+
     setIsOpen(false)
   }
 
