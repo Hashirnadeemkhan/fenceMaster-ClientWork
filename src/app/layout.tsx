@@ -35,19 +35,19 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Fence Masters Team" }],
   generator: "Next.js",
-  metadataBase: new URL("https://www.fencemasters.com"), // apna domain daalna
+  metadataBase: new URL("https://www.fencemasters804ltd.com"), // ✅ correct domain
   alternates: {
-    canonical: "https://www.fencemasters.com",
+    canonical: "https://www.fencemasters804ltd.com",
   },
   openGraph: {
     title: "Fence Masters | Creative Studio",
     description:
       "Fence Masters is a creative agency where design meets innovation. We build brands with visuals that leave a mark.",
-    url: "https://www.fencemasters.com",
+    url: "https://www.fencemasters804ltd.com",
     siteName: "Fence Masters",
     images: [
       {
-        url: "/logo.png", // apni website ke liye OG image daalna (1200x630 recommended)
+        url: "/logo.webp", // ✅ WebP logo (recommended 1200x630 for OG image)
         width: 1200,
         height: 630,
         alt: "Fence Masters Creative Studio",
@@ -56,7 +56,6 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  
   robots: {
     index: true,
     follow: true,
@@ -83,21 +82,23 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${dmSans.variable}`}
     >
       <head>
-          <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="icon" type="image/webp" href="/favicon.webp" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+        {/* ✅ Favicon & App icons */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/webp" href="/favicon.webp" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
 
-        {/* Structured Data (JSON-LD for SEO) */}
-        <script          type="application/ld+json"
+        {/* ✅ Structured Data (Organization Logo for Google) */}
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Fence Masters",
-              url: "https://www.fencemasters.com",
-              logo: "https://www.fencemasters.com/logo.png",
+              url: "https://www.fencemasters804ltd.com",
+              logo: "https://www.fencemasters804ltd.com/logo.webp", // ✅ WebP logo full URL
               sameAs: [
                 "https://www.facebook.com/fencemasters",
                 "https://twitter.com/fencemasters",
