@@ -112,9 +112,14 @@ export function Footer() {
           {/* Crafted by Line */}
           <div className="text-center mt-4 text-xs text-gray-400">
             crafted by{" "}
-            <span className="font-semibold text-green-500">
+            <Link
+              href="http://brightreachsolutions.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-green-500 hover:underline"
+            >
               brightreach solutions
-            </span>
+            </Link>
           </div>
         </div>
       </div>
