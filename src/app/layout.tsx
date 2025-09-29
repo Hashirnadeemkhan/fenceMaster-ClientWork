@@ -72,7 +72,7 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${dmSans.variable}`}
     >
       <head>
-        <meta name="google-site-verification" content="googleac2fe3097e6fb23b" />
+        <meta name="google-site-verification" content="nO0PtlaN8GTTOmG6MKuIUK9vgcy8XI7n9BBPu3RMCJM" />
         {/* ✅ Favicon & App icons */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/favicon.png" />
