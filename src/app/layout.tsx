@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  category: "Creative Agency",
+  category: "Fencing & Gate Installations",
   themeColor: "#ffffff",
 }
 
@@ -72,6 +72,7 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${dmSans.variable}`}
     >
       <head>
+        <meta name="google-site-verification" content="googleac2fe3097e6fb23b" />
         {/* ✅ Favicon & App icons */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/favicon.png" />
