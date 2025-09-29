@@ -21,18 +21,9 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Fence Masters | Where Design Meets Innovation",
-  description:
-    "Fence Masters is a modern creative agency delivering stunning visuals, innovative design, and digital experiences that captivate audiences.",
-  keywords: [
-    "Fence Masters",
-    "Creative Studio",
-    "Design Agency",
-    "Digital Marketing",
-    "Branding",
-    "Web Design",
-    "UI UX",
-  ],
+  title: "Fence Masters — Fencing & Gate Installations, London",
+  description: "Fence Masters is a London-based fencing company offering secure, stylish fence and gate installations, repairs, and free quotes — trusted local experts with 7+ years’ experience.",
+  keywords: [ "Fence Masters", "Fencing", "Gate Installations", "London", "Home Improvement", "Outdoor Living", "Custom Fences", "Metal Fences", "Wooden Fences", "Fence Repairs", "Free Quotes", "Professional Service", "Experienced Installers", "Residential Fencing", "Commercial Fencing" ],
   authors: [{ name: "Fence Masters Team" }],
   generator: "Next.js",
   metadataBase: new URL("https://www.fencemasters804ltd.com"), // ✅ correct domain
@@ -40,22 +31,21 @@ export const metadata: Metadata = {
     canonical: "https://www.fencemasters804ltd.com",
   },
   openGraph: {
-    title: "Fence Masters | Creative Studio",
-    description:
-      "Fence Masters is a creative agency where design meets innovation. We build brands with visuals that leave a mark.",
+    title: "Fence Masters — Fencing & Gate Installations, London",
+    description: "Fence Masters is a creative fencing company delivering timber & metal fence installations, gates, repairs and free on-site quotes across London.",
     url: "https://www.fencemasters804ltd.com",
-    siteName: "Fence Masters",
     images: [
       {
-        url: "/logo.webp", // ✅ WebP logo (recommended 1200x630 for OG image)
+        url: "/logo.webp",
         width: 1200,
         height: 630,
-        alt: "Fence Masters Creative Studio",
+        alt: "Fence Masters - Fencing & Gate Installations",
       },
     ],
     locale: "en_US",
     type: "website",
   },
+
   robots: {
     index: true,
     follow: true,
