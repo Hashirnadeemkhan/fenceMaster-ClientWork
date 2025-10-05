@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, DM_Sans } from "next/font/google"
 import "./globals.css"
+import Script from "next/script";
 
 // Components import
 import { Navbar } from "./components/Navbar"
@@ -98,6 +99,19 @@ export default function RootLayout({
             }),
           }}
         />
+         {/* ✅ Google Tag Script */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17591487894"
+        />
+      <Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17591487894');
+  `}
+</Script>
       </head>
       <body className="font-sans antialiased">
         <Navbar />

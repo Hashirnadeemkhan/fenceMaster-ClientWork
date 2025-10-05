@@ -34,7 +34,6 @@ export default function ServicesPage() {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Enhanced background gradients */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-blue-50"></div>
         <div className="absolute inset-0 opacity-20">
@@ -44,7 +43,6 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* Hero Section */}
       <HeroSection
         title="Professional Fencing"
         subtitle="Services"
@@ -53,7 +51,6 @@ export default function ServicesPage() {
         secondaryButtonText="GET QUOTE"
       />
 
-      {/* Services Header */}
       <section className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
           <div
@@ -67,12 +64,10 @@ export default function ServicesPage() {
               Our Services
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed">
-              We offer a complete range of fencing services to meet all your residential and commercial needs with
-              unmatched quality and professionalism.
+              We offer a complete range of fencing services to meet all your residential and commercial needs with unmatched quality and professionalism.
             </p>
           </div>
 
-          {/* Enhanced Residential Fencing Section */}
           <div
             id="residential-section"
             data-animate
@@ -81,7 +76,6 @@ export default function ServicesPage() {
             }`}
           >
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              {/* Left Side: Enhanced Content */}
               <div className="space-y-8">
                 <Card className="border-0 shadow-2xl bg-gradient-to-br from-white to-green-50/50 backdrop-blur-sm hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
                   <CardHeader className="pb-6">
@@ -100,10 +94,7 @@ export default function ServicesPage() {
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      At Fencing Master, we provide premium residential fencing services in London. From garden &
-                      boundary fencing to privacy screens and decorative panels, our fences are built to be durable,
-                      stylish, and weather-resistant. We ensure your home gets the security, privacy, and curb appeal it
-                      deserves – all at affordable prices.
+                      At Fencing Master, we provide premium residential fencing services in London. From garden & boundary fencing to privacy screens and decorative panels, our fences are built to be durable, stylish, and weather-resistant. We ensure your home gets the security, privacy, and curb appeal it deserves – all at affordable prices.
                     </p>
 
                     <div className="grid gap-4">
@@ -133,18 +124,16 @@ export default function ServicesPage() {
                       </div>
                     </div>
 
-                     <Link href="tel:+447869457259" aria-label="Call +44 7869 457259">
-  <Button className="mt-8 w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-    Get Residential Quote
-    <ArrowRight className="ml-2 w-5 h-5" />
-  </Button>
-</Link> 
-
+                    <Link href="/residential-services">
+                      <Button className="mt-8 w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        Get Residential Quote
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>
 
-              {/* Right Side: Enhanced Video */}
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-blue-400 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                 <div className="relative w-full h-80 lg:h-96 rounded-3xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
@@ -158,7 +147,6 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Enhanced Commercial Fencing Section */}
           <div
             id="commercial-section"
             data-animate
@@ -167,7 +155,6 @@ export default function ServicesPage() {
             }`}
           >
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              {/* Left Side: Enhanced Video */}
               <div className="relative group order-2 lg:order-1">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                 <div className="relative w-full h-80 lg:h-96 rounded-3xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
@@ -179,7 +166,6 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              {/* Right Side: Enhanced Content */}
               <div className="space-y-8 order-1 lg:order-2">
                 <Card className="border-0 shadow-2xl bg-gradient-to-br from-white to-blue-50/50 backdrop-blur-sm hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
                   <CardHeader className="pb-6">
@@ -198,10 +184,7 @@ export default function ServicesPage() {
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Fencing Master delivers reliable commercial fencing solutions for businesses, schools, and
-                      industrial properties. Our security perimeter fences, industrial barriers, and access control
-                      systems provide maximum protection, durability, and low maintenance. Trusted as one of the best
-                      fencing companies in London, we make your property secure and professional-looking.
+                      Fencing Master delivers reliable commercial fencing solutions for businesses, schools, and industrial properties. Our security perimeter fences, industrial barriers, and access control systems provide maximum protection, durability, and low maintenance. Trusted as one of the best fencing companies in London, we make your property secure and professional-looking.
                     </p>
 
                     <div className="grid gap-4">
@@ -231,67 +214,16 @@ export default function ServicesPage() {
                       </div>
                     </div>
 
-                    <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                      Get Commercial Quote
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Button>
+                    <Link href="/commercial-services">
+                      <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        Get Commercial Quote
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced Process Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white relative">
-        <div className="max-w-6xl mx-auto">
-          <div
-            id="process-header"
-            data-animate
-            className={`text-center mb-16 transition-all duration-1000 ${
-              isVisible["process-header"] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-          >
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-6">
-              Our Installation Process
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-              We follow a systematic approach to ensure every project is completed to the highest standards.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { step: "1", title: "Consultation", description: "Free site visit and detailed quote" },
-              { step: "2", title: "Planning", description: "Design approval and material selection" },
-              { step: "3", title: "Installation", description: "Professional installation by our expert team" },
-              { step: "4", title: "Completion", description: "Final inspection and warranty provision" },
-            ].map((process, index) => (
-              <div
-                key={index}
-                id={`process-${index}`}
-                data-animate
-                className={`text-center transition-all duration-1000 delay-${index * 100} ${
-                  isVisible[`process-${index}`]
-                    ? "opacity-100 translate-y-0 scale-100"
-                    : "opacity-0 translate-y-12 scale-95"
-                }`}
-              >
-                <div className="relative group">
-                  <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl group-hover:shadow-2xl transform group-hover:scale-110 transition-all duration-300">
-                    {process.step}
-                  </div>
-                  {index < 3 && (
-                    <div className="hidden md:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-green-300 to-transparent"></div>
-                  )}
-                </div>
-                <h3 className="font-bold text-gray-900 mb-3 text-lg group-hover:text-green-600 transition-colors duration-300">
-                  {process.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{process.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
