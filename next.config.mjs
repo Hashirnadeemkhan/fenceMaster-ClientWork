@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: false // default rakho, Resend aur forms se related nahi hai
-  }
-};
+    domains: ['utfs.io'], // ✅ allow UploadThing image URLs
+  },
+}
 
 export default nextConfig;

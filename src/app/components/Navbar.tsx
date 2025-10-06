@@ -84,6 +84,9 @@ export function Navbar() {
               <Link href="/about" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
                 About Us
               </Link>
+              <Link href="/blog" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
+                Blog
+              </Link>
               <Link href="/gallery" className="hover:text-green-500 transition-colors duration-200 py-2 no-underline">
                 Gallery
               </Link>
@@ -189,6 +192,7 @@ export function Navbar() {
                 { href: "/", label: "Home" },
                 { href: "/service", label: "Service" },
                 { href: "/about", label: "About Us" },
+                { href: "/blog", label: "Blog" },
                 { href: "/gallery", label: "Gallery" },
                 { href: "/contact", label: "Contact" },
               ].map((item, index) => (
