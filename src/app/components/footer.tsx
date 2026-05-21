@@ -105,7 +105,7 @@ export function Footer() {
               </a>
             </div>
             <div className="hover:text-green-500 transition-colors duration-300">
-              Website by brightreach solutions
+              Designed by brightreach solutions
             </div>
           </div>
 
