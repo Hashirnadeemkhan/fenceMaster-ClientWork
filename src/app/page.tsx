@@ -16,6 +16,7 @@ const Home = () => {
         description="Strong, stylish, and secure fencing solutions designed to protect your property and enhance its beauty."
         primaryButtonText="GET A QUOTE"
         secondaryButtonText="LEARN MORE"
+        backgroundImage="/p-fenceline-field.jpg"
       />
       <ContactBanner/>
       <FencingSection/>

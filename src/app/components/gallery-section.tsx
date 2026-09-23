@@ -6,14 +6,18 @@ import Link from "next/link"
 
 export function GallerySection() {
   const galleryImages = [
-   
+    "/p-fenceline-field.jpg",
+    "/p-garden-fence-flowers.jpg",
+    "/p-closeboard-paved.jpg",
+    "/p-fence-pathway.jpg",
+    "/p-garden-arch.jpg",
+    "/p-fence-brickwall.jpg",
+    "/p-fence-corner.png",
     "/gallery-1.jpg",
     "/gallery-2.jpg",
     "/gallery-3.jpg",
     "/gallery-4.jpg",
     "/gallery-5.jpg",
- 
-  
   ]
 
   return (

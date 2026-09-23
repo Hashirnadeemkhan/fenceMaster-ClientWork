@@ -33,6 +33,139 @@ export default function GalleryPage() {
                 <Image
                   height={300}
                   width={400}
+                  src="/p-fenceline-field.jpg"
+                  alt="Feather Edge Fence Line"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Feather Edge Boundary</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Full run of closeboard panels with concrete posts and gravel boards along an open field boundary.
+                </p>
+                <span className="text-green-600 text-sm font-medium">Residential • London</span>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video overflow-hidden">
+                <Image
+                  height={300}
+                  width={400}
+                  src="/p-garden-fence-flowers.jpg"
+                  alt="Garden Fence with Landscaping"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Garden Feature Fence</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Closeboard fencing framing a colourful flower border and manicured lawn.
+                </p>
+                <span className="text-green-600 text-sm font-medium">Residential • London</span>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video overflow-hidden">
+                <Image
+                  height={300}
+                  width={400}
+                  src="/p-closeboard-paved.jpg"
+                  alt="Closeboard Fence by Patio"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Closeboard Panels</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Neat feather edge panels set on concrete posts alongside a paved patio.
+                </p>
+                <span className="text-green-600 text-sm font-medium">Residential • London</span>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video overflow-hidden">
+                <Image
+                  height={300}
+                  width={400}
+                  src="/p-fence-pathway.jpg"
+                  alt="Fence Along Pathway"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Pathway Boundary</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Feather edge fencing running the length of a garden path with a fresh bark border.
+                </p>
+                <span className="text-green-600 text-sm font-medium">Residential • London</span>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video overflow-hidden">
+                <Image
+                  height={300}
+                  width={400}
+                  src="/p-garden-arch.jpg"
+                  alt="Garden Fence with Arch"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Landscaped Garden Fence</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Closeboard panels complementing a planted border and decorative garden arch.
+                </p>
+                <span className="text-green-600 text-sm font-medium">Residential • London</span>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video overflow-hidden">
+                <Image
+                  height={300}
+                  width={400}
+                  src="/p-fence-brickwall.jpg"
+                  alt="Fence Against Brick Wall"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Boundary Replacement</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  New feather edge run installed alongside an existing brick boundary wall.
+                </p>
+                <span className="text-green-600 text-sm font-medium">Residential • London</span>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video overflow-hidden">
+                <Image
+                  height={300}
+                  width={400}
+                  src="/p-fence-corner.png"
+                  alt="Corner Fence Installation"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Corner Enclosure</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Fully enclosed rear garden with matching closeboard panels turning a tidy corner.
+                </p>
+                <span className="text-green-600 text-sm font-medium">Residential • London</span>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video overflow-hidden">
+                <Image
+                  height={300}
+                  width={400}
                   src="/gallery-2.jpg"
                   alt="Residential Garden Fence"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"

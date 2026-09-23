@@ -11,7 +11,7 @@ export function FencingSection() {
         {/* Left Side - Image */}
         <div className="relative rounded-2xl overflow-hidden shadow-lg group">
           <Image
-            src="/gallery-1.jpg"
+            src="/p-closeboard-paved.jpg"
             height={450}
             width={600}
             alt="Fencing and Gates"

@@ -34,7 +34,7 @@ export function CTASection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform transition-transform duration-[8000ms] hover:scale-105"
         style={{
-          backgroundImage: `url('/cta-bg.jpg')`,
+          backgroundImage: `url('/p-garden-fence-flowers.jpg')`,
         }}
       />
 
